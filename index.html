@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#101827">
+<title>PRO HILL CLIMB RACING</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hud">
+  <div>🪙 <span id="coins">0</span></div>
+  <div>🏆 <span id="score">0</span> m</div>
+  <div>⛽ <span id="fuelText">100</span>%</div>
+  <div id="fuel-track"><div id="fuelBar"></div></div>
+</header>
+
+<canvas id="game"></canvas>
+
+<div id="startScreen" class="overlay">
+  <h1>PRO HILL CLIMB</h1>
+  <p>CONQUER THE MOUNTAINS</p>
+  <button id="startBtn">START GAME</button>
+</div>
+
+<div id="gameOver" class="overlay hidden">
+  <h1>GAME OVER</h1>
+  <p>Distance: <span id="finalScore">0</span> m</p>
+  <p>Best: <span id="bestScore">0</span> m</p>
+  <button id="restartBtn">PLAY AGAIN</button>
+</div>
+
+<div id="pauseScreen" class="overlay hidden">
+  <h1>PAUSED</h1>
+  <button id="resumeBtn">RESUME</button>
+</div>
+
+<div id="controls">
+  <button id="brakeBtn">◀ BRAKE</button>
+  <button id="pauseBtn">Ⅱ</button>
+  <button id="gasBtn">GAS ▶</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
